@@ -118,6 +118,7 @@
 	font-size: 16px;
 	background-color: #F0F0F0;
 	color: #000000;
+	overflow: hidden;
 }
 .promo-oppo,
 .promo-oppo * {
@@ -125,6 +126,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-weight: 400;
+	color: black;
 }
 .promo-oppo a {
 	color: inherit;
@@ -134,13 +136,15 @@
 .promo-oppo-container {
 	max-width: 1196px;
 	margin: 0 auto;
-	padding: 0 10px;
 }
 
-.promo-oppo-slider {
+.promo-oppo-slider-mobile {
+	display: none !important;
+}
+.promo-oppo-main-slider {
 	position: relative;
 }
-.promo-oppo-slider:after {
+.promo-oppo-main-slider:after {
 	display: block;
 	content: '';
 	width: 100%;
@@ -150,8 +154,8 @@
 	bottom: 0;
 	position: absolute;
 }
-.promo-oppo-slider,
-.promo-oppo-slider img {
+.promo-oppo-main-slider,
+.promo-oppo-main-slider img {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -238,22 +242,482 @@
 	align-items: center;
 	gap: 30px;
 }
-.promo-oppo-section-arrows svg {
+.promo-oppo-section-arrows svg:not(.disabled):not(.slick-disabled) {
 	cursor: pointer;
 }
-.promo-oppo-section-arrows svg:hover path {
+.promo-oppo-section-arrows svg:not(.disabled):not(.slick-disabled):hover path {
 	fill: #2CFF73;
+}
+.promo-oppo-section-arrows svg.disabled,
+.promo-oppo-section-arrows svg.slick-disabled {
+	opacity: .5;
+}
+.promo-oppo-slide {
+	display: inline-block;
+	position: relative;
+	white-space: normal;
+	vertical-align: top;
+}
+.promo-oppo-slide-small {
+	width: 277px;
+}
+.promo-oppo-slide-big {
+	width: 584px;
+}
+.promo-oppo-slide-video {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.promo-oppo-slide-video svg {
+	margin-left: 4px;
+}
+.promo-oppo-slide:hover .promo-oppo-slide-video {
+	background-color: #2CFF73;
+	border-color: #2CFF73;
+}
+.promo-oppo-slide img {
+	width: 100%;
+	display: block;
+}
+.promo-oppo-slide-image-full {
+	border-radius: 8px;
+}
+.promo-oppo-slide-description {
+	border-radius: 8px;
+	background-color: white;
+	padding: 10px;
+	font-size: 20px;
+}
+.promo-oppo-slide:hover .promo-oppo-slide-description {
+	background-color: #2CFF73;
+}
+.promo-oppo-slide-big .promo-oppo-slide-description {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	font-size: 36px;
+}
+.promo-oppo-slider .promo-oppo-slide + .promo-oppo-slide {
+	margin-left: 25px;
+}
+.promo-oppo-slider-wrapper {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.promo-oppo-slider-wrapper-mobile {
+	display: none;
+}
+.promo-oppo-slider-track {
+	display: inline-block;
+	transform: translateX(0px);
+	transition: transform .3s;
+}
+
+.promo-oppo-slider-slick {
+	margin: 0 -10px;
+}
+.slick-slide {
+	margin: 0 10px;
+}
+
+.promo-oppo-slide-image-wrapper {
+	background-color: #dadada;
+	height: 390px;
+	padding: 60px 15px 20px 15px;
+	border-radius: 8px;
+}
+.promo-oppo-slide-image-title {
+	position: absolute;
+	font-size: 18px;
+	top: 20px;
+	left: 20px;
+}
+.promo-oppo-slide-image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.promo-oppo-slide-background .promo-oppo-slide-description {
+	font-size: 24px;
+}
+.promo-oppo-slide-background {
+	width: 287px;
+}
+.promo-oppo-slide-background-big {
+	width: 564px;
+}
+
+.promo-oppo-slide-reviews-container {
+	border-radius: 8px;
+	position: relative;
+	white-space: normal;
+	overflow: hidden;
+}
+.promo-oppo-slide-reviews img {
+	width: 47%;
+	height: 100%;
+	object-fit: cover;
+}
+.promo-oppo-slide-reviews-wrapper {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	background-color: white;
+	width: 43%;
+	border-radius: 8px;
+}
+.promo-oppo-slide-reviews:hover .promo-oppo-slide-reviews-wrapper {
+	background-color: #2CFF73;
+}
+.promo-oppo-slide-reviews-description {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	right: 20px;
+	font-size: 14px;
+}
+.promo-oppo-slide-reviews-author {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	font-size: 14px;
+}
+.promo-oppo-slide-reviews-text {
+	position: absolute;
+	bottom: 35px;
+	left: 20px;
+	right: 20px;
+	font-size: 24px;
 }
 
 
+@media screen and (max-width: 1235px) {
+	.promo-oppo-container {
+		max-width: 974px;
+	}
 
+	.promo-oppo-wrapper {
+		padding-top: 25px;
+	}
 
+	.promo-oppo-nav {
+		height: 84px;
+	}
+	.promo-oppo-nav a {
+		font-size: 18px;
+		padding: 0 16px;
+	}
+	.promo-oppo-nav a:hover {
+		font-size: 30px;
+		line-height: 84px;
+		height: 84px;
+		padding: 0 35px;
+	}
 
+	.promo-oppo-section {
+		margin-top: 100px;
+	}
+	.promo-oppo-section h2 {
+		font-size: 32px;
+	}
 
+	.promo-oppo-slide-small {
+		width: 222px;
+	}
+	.promo-oppo-slide-big {
+		width: 470px;
+	}
+	.promo-oppo-slide-big .promo-oppo-slide-description {
+		font-size: 30px;
+		padding: 10px 15px;
+	}
 
+	.promo-oppo-slide-background {
+		width: 222px;
+	}
+	.promo-oppo-slide-background-big {
+		width: 470px;
+	}
+	.promo-oppo-slide-background .promo-oppo-slide-description {
+		font-size: 20px;
+	}
 
+	.promo-oppo-slide-reviews-wrapper {
+		width: 45%;
+	}
+	.promo-oppo-slide-reviews-description {
+		font-size: 12px;
+		left: 10px;
+		right: 10px;
+	}
+	.promo-oppo-slide-reviews-text {
+		font-size: 20px;
+		left: 10px;
+		right: 10px;
+	}
+	.promo-oppo-slide-reviews-author {
+		font-size: 12px;
+		right: 10px;
+	}
+}
 
+@media screen and (max-width: 1015px) {
+	.promo-oppo-container {
+		max-width: 744px;
+	}
 
+	.promo-oppo-nav {
+		height: 65px;
+	}
+	.promo-oppo-nav a {
+		line-height: 33px;
+		height: 33px;
+		font-size: 14px;
+		padding: 0 12px;
+	}
+	.promo-oppo-nav a:hover {
+		font-size: 23px;
+		line-height: 65px;
+		height: 65px;
+		padding: 0 20px;
+	}
+	.promo-oppo-section h2 {
+		font-size: 30px;
+	}
+
+	.promo-oppo-slide-small {
+		width: 232px;
+	}
+	.promo-oppo-slide-big {
+		width: 483px;
+	}
+
+	.promo-oppo-slide-background {
+		width: 232px;
+	}
+	.promo-oppo-slide-background-big {
+		width: 483px;
+	}
+	.promo-oppo-slide-image-title {
+		font-size: 14px;
+	}
+
+	.promo-oppo-slide-reviews-container {
+		height: 260px;
+	}
+	.promo-oppo-slide-reviews-description {
+		font-size: 14px;
+		left: 15px;
+		right: 15px;
+		top: 15px;
+	}
+	.promo-oppo-slide-reviews-text {
+		font-size: 24px;
+		left: 15px;
+		right: 15px;
+		bottom: 35px;
+	}
+	.promo-oppo-slide-reviews-author {
+		font-size: 14px;
+		right: 15px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.promo-oppo-wrapper {
+		margin-top: 0;
+	}
+
+	.promo-oppo-container {
+		max-width: 652px;
+	}
+
+	.promo-oppo-nav {
+		height: 56px;
+	}
+	.promo-oppo-nav a {
+		line-height: 30px;
+		height: 30px;
+		font-size: 12px;
+		padding: 0 10px;
+	}
+	.promo-oppo-nav a:hover {
+		font-size: 20px;
+		line-height: 56px;
+		height: 56px;
+		padding: 0 20px;
+	}
+	.promo-oppo-section {
+		margin-top: 80px;
+	}
+
+	.promo-oppo-slide-small {
+		width: 202px;
+	}
+	.promo-oppo-slide-description {
+		font-size: 18px;
+	}
+	.promo-oppo-slide-big {
+		width: 421px;
+	}
+	.promo-oppo-slide-big .promo-oppo-slide-description {
+		font-size: 26px;
+	}
+
+	.promo-oppo-slide-background {
+		width: 202px;
+	}
+	.promo-oppo-slide-background-big {
+		width: 421px;
+	}
+	.promo-oppo-slide-image-wrapper {
+		height: 281px;
+	}
+	.promo-oppo-slide-image-title {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.promo-oppo-container {
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.promo-oppo-slider-desktop {
+		display: none;
+	}
+	.promo-oppo-slider-mobile {
+		display: block !important;
+	}
+	.promo-oppo-slider-mobile .slick-slide {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.promo-oppo-nav {
+		display: block;
+		height: auto;
+	}
+	.promo-oppo-nav a {
+		display: block;
+		max-width: 200px;
+		height: 33px;
+		line-height: 33px;
+		font-size: 14px;
+		margin: 0 auto 10px;
+	}
+	.promo-oppo-nav a:hover {
+		max-width: 100%;
+		height: 65px;
+		line-height: 65px;
+		font-size: 24px;
+	}
+
+	.promo-oppo-section {
+		margin-top: 60px;
+	}
+	.promo-oppo-section h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.promo-oppo-section-arrows {
+		display: none;
+	}
+
+	.promo-oppo-slide-small,
+	.promo-oppo-slide-big {
+		width: 220px;
+	}
+	.promo-oppo-slide-big .promo-oppo-slide-description {
+		position: relative;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	.promo-oppo-slide-description {
+		font-size: 14px !important;
+	}
+	.promo-oppo-slider-wrapper {
+		overflow-x: visible;
+	}
+
+	.promo-oppo-slide-background {
+		width: 110px;
+	}
+	.promo-oppo-slide-background-big {
+		width: 220px;
+	}
+
+	.promo-oppo-slider-wrapper-desktop {
+		display: none;
+	}
+	.promo-oppo-slider-wrapper-mobile {
+		display: block;
+	}
+	.promo-oppo-slider-video .promo-oppo-slide-image-full {
+		width: 220px !important;
+		height: 139px;
+		object-fit: cover;
+	}
+	.promo-oppo-slider-video .promo-oppo-slide {
+		width: 220px;
+	}
+
+	.promo-oppo-slide-reviews {
+		display: inline-block;
+		width: 220px;
+		height: auto;
+	}
+	.promo-oppo-slide-reviews + .promo-oppo-slide-reviews {
+		margin-left: 15px;
+	}
+	.promo-oppo-slide-reviews img {
+		width: 100%;
+		height: 167px;
+		object-fit: contain;
+	}
+	.promo-oppo-slide-reviews-wrapper {
+		width: auto;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		top: auto;
+		height: 106px;
+	}
+	.promo-oppo-slide-reviews-description {
+		font-size: 10px;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+	}
+	.promo-oppo-slide-reviews-text {
+		font-size: 14px;
+		bottom: 25px;
+		left: 10px;
+		right: 10px;
+	}
+	.promo-oppo-slide-reviews-author {
+		font-size: 10px;
+		bottom: 10px;
+		right: 10px;
+	}
+}
 
 
 
