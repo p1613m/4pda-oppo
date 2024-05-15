@@ -116,9 +116,10 @@
 	font-family: 'OPPOSans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	background-color: #F0F0F0;
 	color: #000000;
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
 }
 .promo-oppo,
 .promo-oppo * {
@@ -133,9 +134,34 @@
 	text-decoration: none;
 }
 
+.promo-oppo-content {
+	background-color: #F0F0F0;
+	position: relative;
+}
+.promo-oppo-content:after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 80px;
+	background-color: #F0F0F0;
+	border-radius: 60px 60px 0 0;
+	top: -80px;
+	position: absolute;
+}
+
 .promo-oppo-container {
 	max-width: 1196px;
 	margin: 0 auto;
+}
+
+.promo-oppo-main-slider-absolute {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+.promo-oppo-main-slider-parallax-helper {
+	pointer-events: none;
 }
 
 .promo-oppo-slider-mobile {
@@ -144,15 +170,8 @@
 .promo-oppo-main-slider {
 	position: relative;
 }
-.promo-oppo-main-slider:after {
-	display: block;
-	content: '';
-	width: 100%;
-	height: 80px;
-	background-color: #F0F0F0;
-	border-radius: 60px 60px 0 0;
-	bottom: 0;
-	position: absolute;
+.promo-oppo-main-slider .slick-slide {
+	margin: 0 !important;
 }
 .promo-oppo-main-slider,
 .promo-oppo-main-slider img {

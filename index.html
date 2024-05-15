@@ -31,343 +31,349 @@
 	<script src="https://s.4pda.to/js/slick.js"></script>
 </head>
 <body>
-
-<div class="promo-oppo">
-	<div class="promo-oppo-main-slider promo-oppo-slider-desktop">
-		<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-prev", "nextArrow": "#promo-oppo-slider-controls-next"}'>
-			<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
-			<a href="#" target="_blank">
-				<img src="images/slide-0.jpg" alt="">
-			</a>
-			<a href="#" target="_blank">
-				<img src="images/slide-0.jpg" alt="">
-			</a>
-			<a href="#" target="_blank">
-				<img src="images/slide-0.jpg" alt="">
-			</a>
+<div class="promo-oppo" id="promo-oppo">
+	<div class="promo-oppo-main-slider-absolute" id="oppo-main-slider-absolute">
+		<div class="promo-oppo-main-slider-wrapper" id="oppo-main-slider-wrapper">
+			<div class="promo-oppo-main-slider promo-oppo-slider-desktop">
+				<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-prev", "nextArrow": "#promo-oppo-slider-controls-next"}'>
+					<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
+					<a href="#" target="_blank">
+						<img src="images/slide-0.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="images/slide-0.jpg" alt="">
+					</a>
+					<a href="#" target="_blank">
+						<img src="images/slide-0.jpg" alt="">
+					</a>
+				</div>
+				<div class="promo-oppo-slider-controls">
+					<div class="promo-oppo-container">
+						<button class="promo-oppo-slider-controls-prev" id="promo-oppo-slider-controls-prev">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.07107 0.928933L1 8L8.07107 15.0711" stroke="black" stroke-linecap="round"/>
+							</svg>
+						</button>
+						<button class="promo-oppo-slider-controls-next" id="promo-oppo-slider-controls-next">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.928931 15.0711L8 8L0.928935 0.928931" stroke="black" stroke-linecap="round"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="promo-oppo-main-slider promo-oppo-slider-mobile">
+			<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-mobile-prev", "nextArrow": "#promo-oppo-slider-controls-mobile-next"}'>
+				<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
+				<a href="#" target="_blank">
+					<img src="https://placehold.co/320x480" alt="">
+				</a>
+				<a href="#" target="_blank">
+					<img src="https://placehold.co/320x480" alt="">
+				</a>
+				<a href="#" target="_blank">
+					<img src="https://placehold.co/320x480" alt="">
+				</a>
+			</div>
+			<div class="promo-oppo-slider-controls">
+				<div class="promo-oppo-container">
+					<button class="promo-oppo-slider-controls-prev" id="promo-oppo-slider-controls-mobile-prev">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.07107 0.928933L1 8L8.07107 15.0711" stroke="black" stroke-linecap="round"/>
+						</svg>
+					</button>
+					<button class="promo-oppo-slider-controls-next" id="promo-oppo-slider-controls-mobile-next">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.928931 15.0711L8 8L0.928935 0.928931" stroke="black" stroke-linecap="round"/>
+						</svg>
+					</button>
+				</div>
+			</div>
 		</div>
-		<div class="promo-oppo-slider-controls">
+		</div>
+	</div>
+	<div class="promo-oppo-main-slider-parallax-helper" id="oppo-main-slider-parallax-helper"></div>
+	<div class="promo-oppo-content">
+		<div class="promo-oppo-wrapper">
 			<div class="promo-oppo-container">
-				<button class="promo-oppo-slider-controls-prev" id="promo-oppo-slider-controls-prev">
-					<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.07107 0.928933L1 8L8.07107 15.0711" stroke="black" stroke-linecap="round"/>
-					</svg>
-				</button>
-				<button class="promo-oppo-slider-controls-next" id="promo-oppo-slider-controls-next">
-					<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0.928931 15.0711L8 8L0.928935 0.928931" stroke="black" stroke-linecap="round"/>
-					</svg>
-				</button>
+				<nav class="promo-oppo-nav">
+					<a href="#">Новости</a>
+					<a href="#">Обзоры</a>
+					<a href="#">Новости бренда</a>
+					<a href="#">Тесты</a>
+					<a href="#">Видео</a>
+					<a href="#">О бренде</a>
+				</nav>
 			</div>
 		</div>
-	</div>
-	<div class="promo-oppo-main-slider promo-oppo-slider-mobile">
-		<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-mobile-prev", "nextArrow": "#promo-oppo-slider-controls-mobile-next"}'>
-			<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
-			<a href="#" target="_blank">
-				<img src="https://placehold.co/320x480" alt="">
-			</a>
-			<a href="#" target="_blank">
-				<img src="https://placehold.co/320x480" alt="">
-			</a>
-			<a href="#" target="_blank">
-				<img src="https://placehold.co/320x480" alt="">
-			</a>
-		</div>
-		<div class="promo-oppo-slider-controls">
+		<div class="promo-oppo-section">
 			<div class="promo-oppo-container">
-				<button class="promo-oppo-slider-controls-prev" id="promo-oppo-slider-controls-mobile-prev">
-					<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.07107 0.928933L1 8L8.07107 15.0711" stroke="black" stroke-linecap="round"/>
-					</svg>
-				</button>
-				<button class="promo-oppo-slider-controls-next" id="promo-oppo-slider-controls-mobile-next">
-					<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0.928931 15.0711L8 8L0.928935 0.928931" stroke="black" stroke-linecap="round"/>
-					</svg>
-				</button>
+				<h2>
+					<span>НОВОСТИ БРЕНДА</span>
+					<span class="promo-oppo-section-arrows">
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="disabled" data-promo-oppo-slider-arrow-prev="news">
+							<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
+						</svg>
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-promo-oppo-slider-arrow-next="news">
+							<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
+						</svg>
+					</span>
+				</h2>
 			</div>
-		</div>
-	</div>
-	<div class="promo-oppo-wrapper">
-		<div class="promo-oppo-container">
-			<nav class="promo-oppo-nav">
-				<a href="#">Новости</a>
-				<a href="#">Обзоры</a>
-				<a href="#">Новости бренда</a>
-				<a href="#">Тесты</a>
-				<a href="#">Видео</a>
-				<a href="#">О бренде</a>
-			</nav>
-		</div>
-	</div>
-	<div class="promo-oppo-section">
-		<div class="promo-oppo-container">
-			<h2>
-				<span>НОВОСТИ БРЕНДА</span>
-				<span class="promo-oppo-section-arrows">
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="disabled" data-promo-oppo-slider-arrow-prev="news">
-						<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
-					</svg>
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-promo-oppo-slider-arrow-next="news">
-						<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
-					</svg>
-				</span>
-			</h2>
-		</div>
-		<div class="promo-oppo-container">
-			<div class="promo-oppo-slider" data-promo-oppo-slider="news">
-				<div class="promo-oppo-slider-wrapper">
-					<div class="promo-oppo-slider-track">
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-							<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
-						</a>
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
-							<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
-						</a>
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-							<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
-						</a>
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-							<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
-						</a>
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
-							<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
-						</a>
-						<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-							<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
-						</a>
+			<div class="promo-oppo-container">
+				<div class="promo-oppo-slider" data-promo-oppo-slider="news">
+					<div class="promo-oppo-slider-wrapper">
+						<div class="promo-oppo-slider-track">
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+								<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
+							</a>
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
+								<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
+							</a>
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+								<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
+							</a>
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+								<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
+							</a>
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
+								<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
+							</a>
+							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+								<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="promo-oppo-section">
-		<div class="promo-oppo-container">
-			<h2>
-				<span>Видео</span>
-				<span class="promo-oppo-section-arrows">
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-prev-video">
-						<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
-					</svg>
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-next-video">
-						<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
-					</svg>
-				</span>
-			</h2>
-		</div>
-		<div class="promo-oppo-container">
-			<div class="promo-oppo-slider promo-oppo-slider-slick">
-				<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-desktop">
-					<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-video", "nextArrow": "#promo-oppo-slider-arrow-next-video", "slidesToShow": 3, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 2}}]}'>
-						<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-1.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Find N3. Экспертное исполнение</div>
-						</a>
-						<a href="https://www.youtube.com/watch?v=Oj7HhGVToQY" target="_blank" class="promo-oppo-slide ">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-2.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Reno10 5G. Профессионально продуманный дизайн</div>
-						</a>
-						<a href="https://www.youtube.com/watch?v=THl50jMV974" target="_blank" class="promo-oppo-slide ">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-3.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Reno8 T 5G Проект OPPO, Александра Мазурова и Russian Traveller</div>
-						</a>
+		<div class="promo-oppo-section">
+			<div class="promo-oppo-container">
+				<h2>
+					<span>Видео</span>
+					<span class="promo-oppo-section-arrows">
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-prev-video">
+							<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
+						</svg>
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-next-video">
+							<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
+						</svg>
+					</span>
+				</h2>
+			</div>
+			<div class="promo-oppo-container">
+				<div class="promo-oppo-slider promo-oppo-slider-slick">
+					<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-desktop">
+						<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-video", "nextArrow": "#promo-oppo-slider-arrow-next-video", "slidesToShow": 3, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 2}}]}'>
+							<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-1.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Find N3. Экспертное исполнение</div>
+							</a>
+							<a href="https://www.youtube.com/watch?v=Oj7HhGVToQY" target="_blank" class="promo-oppo-slide ">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-2.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Reno10 5G. Профессионально продуманный дизайн</div>
+							</a>
+							<a href="https://www.youtube.com/watch?v=THl50jMV974" target="_blank" class="promo-oppo-slide ">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-3.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Reno8 T 5G Проект OPPO, Александра Мазурова и Russian Traveller</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-mobile promo-oppo-slider-video">
-					<div class="promo-oppo-slider-track">
-						<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-1.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Find N3. Экспертное исполнение</div>
-						</a>
-						<a href="https://www.youtube.com/watch?v=Oj7HhGVToQY" target="_blank" class="promo-oppo-slide ">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-2.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Reno10 5G. Профессионально продуманный дизайн</div>
-						</a>
-						<a href="https://www.youtube.com/watch?v=THl50jMV974" target="_blank" class="promo-oppo-slide ">
-							<div class="promo-oppo-slide-video">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
-								</svg>
-							</div>
-							<img src="images/video-3.jpg" class="promo-oppo-slide-image-full" alt="">
-							<div class="promo-oppo-slide-description">OPPO Reno8 T 5G Проект OPPO, Александра Мазурова и Russian Traveller</div>
-						</a>
+					<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-mobile promo-oppo-slider-video">
+						<div class="promo-oppo-slider-track">
+							<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-1.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Find N3. Экспертное исполнение</div>
+							</a>
+							<a href="https://www.youtube.com/watch?v=Oj7HhGVToQY" target="_blank" class="promo-oppo-slide ">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-2.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Reno10 5G. Профессионально продуманный дизайн</div>
+							</a>
+							<a href="https://www.youtube.com/watch?v=THl50jMV974" target="_blank" class="promo-oppo-slide ">
+								<div class="promo-oppo-slide-video">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.0705 9.41219L19.07 9.41192L2.11227 0.638089C2.11226 0.638085 2.11225 0.63808 2.11225 0.638076C1.95301 0.555822 1.76218 0.506348 1.56035 0.500569C1.35854 0.49479 1.16227 0.533186 0.993527 0.607296C0.824644 0.681469 0.697675 0.784821 0.615863 0.895579C0.535268 1.00469 0.500311 1.11755 0.5 1.22296V18.7752V18.777C0.500311 18.8825 0.535269 18.9953 0.615863 19.1044C0.697673 19.2152 0.824641 19.3185 0.993527 19.3927C1.16227 19.4668 1.35855 19.5052 1.56035 19.4994C1.76205 19.4937 1.95277 19.4442 2.11194 19.3621L19.0705 9.41219ZM19.0705 9.41219C19.2194 9.489 19.3293 9.58834 19.3999 9.69219C19.4696 9.79476 19.5 9.89984 19.5 9.99878C19.5 10.0977 19.4696 10.2028 19.3999 10.3054C19.3293 10.4092 19.2194 10.5086 19.0705 10.5854L19.0699 10.5857L2.11227 19.3619L19.0705 9.41219Z" stroke="black"/>
+									</svg>
+								</div>
+								<img src="images/video-3.jpg" class="promo-oppo-slide-image-full" alt="">
+								<div class="promo-oppo-slide-description">OPPO Reno8 T 5G Проект OPPO, Александра Мазурова и Russian Traveller</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="promo-oppo-section">
-		<div class="promo-oppo-container">
-			<h2>
-				<span>ПРОДУКТЫ OPPO</span>
-				<span class="promo-oppo-section-arrows">
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="disabled" data-promo-oppo-slider-arrow-prev="products">
-						<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
-					</svg>
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-promo-oppo-slider-arrow-next="products">
-						<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
-					</svg>
-				</span>
-			</h2>
-		</div>
-		<div class="promo-oppo-container">
-			<div class="promo-oppo-slider" data-promo-oppo-slider="products">
-				<div class="promo-oppo-slider-wrapper">
-					<div class="promo-oppo-slider-track">
-						<a href="https://4pda.to/2024/04/10/426516/obzor_oppo_reno11_f_ekran_amoled_i_chip_dimensity_7050/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background promo-oppo-slide-background-big">
-							<div class="promo-oppo-slide-image-wrapper">
-								<span class="promo-oppo-slide-image-title">OPPO Reno11 F</span>
-								<img src="images/product-1.png" alt="">
-							</div>
-							<div class="promo-oppo-slide-description">Обзор OPPO Reno11 F: экран AMOLED и чип Dimensity 7050</div>
-						</a>
-						<a href="https://4pda.to/2023/11/22/420705/obzor_oppo_find_n3_raskladushka_na_vse_dengi/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background">
-							<div class="promo-oppo-slide-image-wrapper" style="background-color: #ffffff">
-								<span class="promo-oppo-slide-image-title">OPPO Find N3</span>
-								<img src="images/product-2.png" alt="">
-							</div>
-							<div class="promo-oppo-slide-description">Обзор OPPO Find N3: раскладушка на все деньги</div>
-						</a>
-						<a href="https://4pda.to/2023/08/16/416968/obzor_oppo_reno10_teleobektiv_i_chip_dimensity_7050/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background">
-							<div class="promo-oppo-slide-image-wrapper">
-								<span class="promo-oppo-slide-image-title">OPPO Reno10</span>
-								<img src="images/product-3.png" alt="">
-							</div>
-							<div class="promo-oppo-slide-description">Обзор OPPO Reno10: телеобъектив и чип Dimensity 7050</div>
-						</a>
+		<div class="promo-oppo-section">
+			<div class="promo-oppo-container">
+				<h2>
+					<span>ПРОДУКТЫ OPPO</span>
+					<span class="promo-oppo-section-arrows">
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="disabled" data-promo-oppo-slider-arrow-prev="products">
+							<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
+						</svg>
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-promo-oppo-slider-arrow-next="products">
+							<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
+						</svg>
+					</span>
+				</h2>
+			</div>
+			<div class="promo-oppo-container">
+				<div class="promo-oppo-slider" data-promo-oppo-slider="products">
+					<div class="promo-oppo-slider-wrapper">
+						<div class="promo-oppo-slider-track">
+							<a href="https://4pda.to/2024/04/10/426516/obzor_oppo_reno11_f_ekran_amoled_i_chip_dimensity_7050/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background promo-oppo-slide-background-big">
+								<div class="promo-oppo-slide-image-wrapper">
+									<span class="promo-oppo-slide-image-title">OPPO Reno11 F</span>
+									<img src="images/product-1.png" alt="">
+								</div>
+								<div class="promo-oppo-slide-description">Обзор OPPO Reno11 F: экран AMOLED и чип Dimensity 7050</div>
+							</a>
+							<a href="https://4pda.to/2023/11/22/420705/obzor_oppo_find_n3_raskladushka_na_vse_dengi/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background">
+								<div class="promo-oppo-slide-image-wrapper" style="background-color: #ffffff">
+									<span class="promo-oppo-slide-image-title">OPPO Find N3</span>
+									<img src="images/product-2.png" alt="">
+								</div>
+								<div class="promo-oppo-slide-description">Обзор OPPO Find N3: раскладушка на все деньги</div>
+							</a>
+							<a href="https://4pda.to/2023/08/16/416968/obzor_oppo_reno10_teleobektiv_i_chip_dimensity_7050/" target="_blank" class="promo-oppo-slide promo-oppo-slide-background">
+								<div class="promo-oppo-slide-image-wrapper">
+									<span class="promo-oppo-slide-image-title">OPPO Reno10</span>
+									<img src="images/product-3.png" alt="">
+								</div>
+								<div class="promo-oppo-slide-description">Обзор OPPO Reno10: телеобъектив и чип Dimensity 7050</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="promo-oppo-section">
-		<div class="promo-oppo-container">
-			<h2>
-				<span>Мнение пользователей 4pdА</span>
-				<span class="promo-oppo-section-arrows">
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-prev-reviews">
-						<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
-					</svg>
-					<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-next-reviews">
-						<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
-					</svg>
-				</span>
-			</h2>
-		</div>
-		<div class="promo-oppo-container">
-			<div class="promo-oppo-slider promo-oppo-slider-slick promo-oppo-slider-wrapper-desktop">
-				<div class="promo-oppo-slider-wrapper">
-					<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-reviews", "nextArrow": "#promo-oppo-slider-arrow-next-reviews", "slidesToShow": 2, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 1}}]}'>
-						<a href="https://4pda.to/?p=412491" target="_blank" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
-								<img src="images/reviews-1.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Снимками<br>хочется делиться в соцсетях»</span>
-									<span class="promo-oppo-slide-reviews-author">Андрей</span>
+		<div class="promo-oppo-section">
+			<div class="promo-oppo-container">
+				<h2>
+					<span>Мнение пользователей 4pdА</span>
+					<span class="promo-oppo-section-arrows">
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-prev-reviews">
+							<path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM125 7.00001L1 7L1 9L125 9.00001L125 7.00001Z" fill="#0D0D0D"/>
+						</svg>
+						<svg width="125" height="16" viewBox="0 0 125 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="promo-oppo-slider-arrow-next-reviews">
+							<path d="M124.707 8.70711C125.098 8.31658 125.098 7.68342 124.707 7.29289L118.343 0.928931C117.953 0.538407 117.319 0.538407 116.929 0.928931C116.538 1.31946 116.538 1.95262 116.929 2.34314L122.586 8L116.929 13.6569C116.538 14.0474 116.538 14.6805 116.929 15.0711C117.319 15.4616 117.953 15.4616 118.343 15.0711L124.707 8.70711ZM-1.74846e-07 8.99998L124 9L124 7L1.74846e-07 6.99998L-1.74846e-07 8.99998Z" fill="#0D0D0D"/>
+						</svg>
+					</span>
+				</h2>
+			</div>
+			<div class="promo-oppo-container">
+				<div class="promo-oppo-slider promo-oppo-slider-slick promo-oppo-slider-wrapper-desktop">
+					<div class="promo-oppo-slider-wrapper">
+						<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-reviews", "nextArrow": "#promo-oppo-slider-arrow-next-reviews", "slidesToShow": 2, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 1}}]}'>
+							<a href="https://4pda.to/?p=412491" target="_blank" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
+									<img src="images/reviews-1.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Снимками<br>хочется делиться в соцсетях»</span>
+										<span class="promo-oppo-slide-reviews-author">Андрей</span>
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="https://4pda.to/?p=412692" target="_blank" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #A69DAE">
-								<img src="images/reviews-2.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест батареи и производительности OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Сбалансированный и долгоиграющий»</span>
-									<span class="promo-oppo-slide-reviews-author">Александр</span>
+							</a>
+							<a href="https://4pda.to/?p=412692" target="_blank" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #A69DAE">
+									<img src="images/reviews-2.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест батареи и производительности OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Сбалансированный и долгоиграющий»</span>
+										<span class="promo-oppo-slide-reviews-author">Александр</span>
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="https://4pda.to/?p=412843" target="_blank" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
-								<img src="images/reviews-3.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест оболочки OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Баланс между количеством и качеством опций»</span>
-									<span class="promo-oppo-slide-reviews-author">Валерий</span>
+							</a>
+							<a href="https://4pda.to/?p=412843" target="_blank" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
+									<img src="images/reviews-3.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест оболочки OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Баланс между количеством и качеством опций»</span>
+										<span class="promo-oppo-slide-reviews-author">Валерий</span>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="promo-oppo-slider promo-oppo-slider-wrapper-mobile">
+					<div class="promo-oppo-slider-wrapper">
+						<div class="promo-oppo-slider-track">
+							<a href="https://4pda.to/?p=412491" target="_blank" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
+									<img src="images/reviews-1.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Снимками хочется делиться в соцсетях»</span>
+										<span class="promo-oppo-slide-reviews-author">Андрей</span>
+									</div>
+								</div>
+							</a>
+							<a href="https://4pda.to/?p=412692" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #A69DAE">
+									<img src="images/reviews-2.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест оболочки OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Сбалансированный и долгоиграющий»</span>
+										<span class="promo-oppo-slide-reviews-author">Александр</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="promo-oppo-slide-reviews">
+								<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
+									<img src="images/reviews-3.png" alt="">
+									<div class="promo-oppo-slide-reviews-wrapper">
+										<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
+										<span class="promo-oppo-slide-reviews-text">«Баланс между количеством и качеством опций»</span>
+										<span class="promo-oppo-slide-reviews-author">Валерий</span>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="promo-oppo-slider promo-oppo-slider-wrapper-mobile">
-				<div class="promo-oppo-slider-wrapper">
-					<div class="promo-oppo-slider-track">
-						<a href="https://4pda.to/?p=412491" target="_blank" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
-								<img src="images/reviews-1.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Снимками хочется делиться в соцсетях»</span>
-									<span class="promo-oppo-slide-reviews-author">Андрей</span>
-								</div>
-							</div>
-						</a>
-						<a href="https://4pda.to/?p=412692" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #A69DAE">
-								<img src="images/reviews-2.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест оболочки OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Сбалансированный и долгоиграющий»</span>
-									<span class="promo-oppo-slide-reviews-author">Александр</span>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="promo-oppo-slide-reviews">
-							<div class="promo-oppo-slide-reviews-container" style="background-color: #141414">
-								<img src="images/reviews-3.png" alt="">
-								<div class="promo-oppo-slide-reviews-wrapper">
-									<span class="promo-oppo-slide-reviews-description">Тест камеры OPPO Reno8 T 5G</span>
-									<span class="promo-oppo-slide-reviews-text">«Баланс между количеством и качеством опций»</span>
-									<span class="promo-oppo-slide-reviews-author">Валерий</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
-	<div class="promo-oppo-section">
+		<div class="promo-oppo-section">
 		<div class="promo-oppo-container">
 			<h2>
 				<span>Все публикации</span>
 			</h2>
 		</div>
+	</div>
 	</div>
 </div>
 

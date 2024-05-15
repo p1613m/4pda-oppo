@@ -1,4 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
+    /** main slider parallax **/
+    const mainSliderAbsolute = document.querySelector('#oppo-main-slider-absolute')
+    const mainSliderParallax = document.querySelector('#oppo-main-slider-parallax-helper')
+    const promoOppo = document.querySelector('#promo-oppo')
+    let mainSliderParallaxActive = false
+
+    const updateMainSliderParallax = () => {
+        if (!mainSliderParallaxActive) return;
+
+        const sliderHeight = mainSliderAbsolute.getBoundingClientRect().height
+        const scrollTop = document.documentElement.scrollTop
+        const promoOppoPagePosition = promoOppo.getBoundingClientRect().top + scrollTop
+        let parallaxHeight = sliderHeight - scrollTop
+        if (parallaxHeight < 0) {
+            parallaxHeight = 0
+        }
+
+        if (sliderHeight > 0) {
+            mainSliderAbsolute.style.position = 'absolute'
+            mainSliderParallax.style.height = parallaxHeight + 'px'
+        } else {
+            mainSliderAbsolute.style.position = 'relative'
+            mainSliderParallax.style.height = '0px'
+        }
+    }
+    setInterval(() => {
+        if (mainSliderAbsolute.querySelector('.slick-slider')) {
+            mainSliderParallaxActive = true
+            updateMainSliderParallax()
+        }
+    }, 50)
+
+    window.addEventListener('resize', () => {
+        updateMainSliderParallax()
+    })
+
+    document.addEventListener('scroll', () => {
+        updateMainSliderParallax()
+    })
+
+    /** sliders **/
     const sliderStep = 500
 
     document.querySelectorAll('[data-promo-oppo-slider]').forEach(slider => {
@@ -25,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const updateMinX = () => {
             minX = ~~(slider.getBoundingClientRect().width - track.getBoundingClientRect().width)
-            console.log(minX);
             if (minX >= 0) {
                 arrowNext.style.display = 'none'
                 arrowPrev.style.display = 'none'
@@ -53,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => {
             updateMinX()
             changeX(0)
-            console.log('resized');
         })
     })
 })
