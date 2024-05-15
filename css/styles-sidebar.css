@@ -52,13 +52,17 @@
 	flex-direction: column;
 }
 .promo-oppo-sidebar-image {
-	flex-basis: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	min-width: 0;
 }
 .promo-oppo-sidebar-image img {
 	width: 100%;
 }
 .promo-oppo-sidebar-characteristics {
-	flex-basis: 100%;
+	flex-grow: 1;
+	flex-basis: 0;
+	min-width: 0;
 }
 .promo-oppo-sidebar-characteristics-item + .promo-oppo-sidebar-characteristics-item {
 	margin-top: 20px;

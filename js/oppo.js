@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const updateMinX = () => {
             minX = ~~(slider.getBoundingClientRect().width - track.getBoundingClientRect().width)
+            console.log(minX);
+            if (minX >= 0) {
+                arrowNext.style.display = 'none'
+                arrowPrev.style.display = 'none'
+            } else {
+                arrowNext.style.display = 'block'
+                arrowPrev.style.display = 'block'
+            }
         }
 
         arrowPrev.addEventListener('click', () => {
