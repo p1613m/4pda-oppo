@@ -63,7 +63,7 @@
 			</div>
 			<div class="promo-oppo-main-slider promo-oppo-slider-mobile">
 			<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-mobile-prev", "nextArrow": "#promo-oppo-slider-controls-mobile-next"}'>
-				<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
+				<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (mobile) -->
 				<a href="#" target="_blank">
 					<img src="https://placehold.co/320x480" alt="">
 				</a>
@@ -96,6 +96,7 @@
 		<div class="promo-oppo-wrapper">
 			<div class="promo-oppo-container">
 				<nav class="promo-oppo-nav">
+					<!-- ссылки для навигационного меню -->
 					<a href="#">Новости</a>
 					<a href="#">Обзоры</a>
 					<a href="#">Новости бренда</a>
@@ -123,27 +124,16 @@
 				<div class="promo-oppo-slider" data-promo-oppo-slider="news">
 					<div class="promo-oppo-slider-wrapper">
 						<div class="promo-oppo-slider-track">
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+							<!-- В атрибут href вставляется ссылка, в атрибут src вставляется ссылка на изображение -->
+							<a href="#" target="_blank" class="promo-oppo-slide promo-oppo-slide-small">
 								<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
 								<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
 							</a>
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
+							<a href="#" target="_blank" class="promo-oppo-slide promo-oppo-slide-big">
 								<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
 								<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
 							</a>
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-								<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
-								<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
-							</a>
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
-								<img src="images/news-1.jpg" class="promo-oppo-slide-image-full" alt="">
-								<div class="promo-oppo-slide-description">Find N3 Flip: Фотореволюция в складном формате</div>
-							</a>
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-big">
-								<img src="images/news-2.jpg" class="promo-oppo-slide-image-full" alt="">
-								<div class="promo-oppo-slide-description">7 впечатляющих технологий OPPO Reno4 Pro</div>
-							</a>
-							<a href="#" class="promo-oppo-slide promo-oppo-slide-small">
+							<a href="#" target="_blank" class="promo-oppo-slide promo-oppo-slide-small">
 								<img src="images/news-3.jpg" class="promo-oppo-slide-image-full" alt="">
 								<div class="promo-oppo-slide-description">OPPO A15s с ёмким аккумулятором и тройной камерой оценили в $156</div>
 							</a>
@@ -168,6 +158,7 @@
 			</div>
 			<div class="promo-oppo-container">
 				<div class="promo-oppo-slider promo-oppo-slider-slick">
+					<!-- Блок отвечает за вывод списка видео в desktop версии -->
 					<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-desktop">
 						<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-video", "nextArrow": "#promo-oppo-slider-arrow-next-video", "slidesToShow": 3, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 2}}]}'>
 							<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
@@ -199,6 +190,8 @@
 							</a>
 						</div>
 					</div>
+
+					<!-- Блок отвечает за вывод списка видео в mobile версии -->
 					<div class="promo-oppo-slider-wrapper promo-oppo-slider-wrapper-mobile promo-oppo-slider-video">
 						<div class="promo-oppo-slider-track">
 							<a href="https://www.youtube.com/watch?v=SSS7M395Vw4" target="_blank" class="promo-oppo-slide">
@@ -292,6 +285,7 @@
 				</h2>
 			</div>
 			<div class="promo-oppo-container">
+				<!-- Блок отвечает за вывод списка мнений в desktop версии -->
 				<div class="promo-oppo-slider promo-oppo-slider-slick promo-oppo-slider-wrapper-desktop">
 					<div class="promo-oppo-slider-wrapper">
 						<div class="promo-oppo-slider-track" data-slick='{"prevArrow": "#promo-oppo-slider-arrow-prev-reviews", "nextArrow": "#promo-oppo-slider-arrow-next-reviews", "slidesToShow": 2, "infinite": false, "responsive": [{"breakpoint": 1015, "settings": {"slidesToShow": 1}}]}'>
@@ -328,6 +322,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Блок отвечает за вывод списка мнений в mobile версии -->
 				<div class="promo-oppo-slider promo-oppo-slider-wrapper-mobile">
 					<div class="promo-oppo-slider-wrapper">
 						<div class="promo-oppo-slider-track">
@@ -376,7 +372,7 @@
 	</div>
 </div>
 
-
+<!-- этот код для демонстрации отображения сайтбара -->
 <div style="width: 318px;margin-top: 10px;margin-left: 10px;margin-bottom: 10px;">
 	<article class="post rnd-replace-sidebar rnd-replace-sidebar-oppo-sidebar" itemscope="">
 		<rnd-replace-article class="rnd-replace-side-box rnd-replace-html_news-type" itemscope="">

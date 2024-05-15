@@ -3,7 +3,6 @@
 		<div class="promo-oppo-main-slider-wrapper" id="oppo-main-slider-wrapper">
 			<div class="promo-oppo-main-slider promo-oppo-slider-desktop">
 				<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-prev", "nextArrow": "#promo-oppo-slider-controls-next"}'>
-					<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
 					<a href="#" target="_blank">
 						<img src="images/slide-0.jpg" alt="">
 					</a>
@@ -31,7 +30,6 @@
 			</div>
 			<div class="promo-oppo-main-slider promo-oppo-slider-mobile">
 			<div data-slick='{"prevArrow": "#promo-oppo-slider-controls-mobile-prev", "nextArrow": "#promo-oppo-slider-controls-mobile-next"}'>
-				<!-- Ссылки перехода со слайдов, ссылки на изображения слайлдов (desktop) -->
 				<a href="#" target="_blank">
 					<img src="https://placehold.co/320x480" alt="">
 				</a>
