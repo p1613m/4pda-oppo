@@ -1,0 +1,99 @@
+
+/** sidebar **/
+.rnd-replace-sidebar-oppo-sidebar {
+	background-color: transparent;
+	color: #000000;
+	font-family: 'OPPOSans', sans-serif;
+	position: relative;
+	overflow: hidden;
+	font-size: 16px;
+}
+.rnd-replace-sidebar-oppo-sidebar .rnd-replace-side-box {
+	align-items: flex-start;
+}
+.promo-oppo-sidebar-ad {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 8px;
+	background-color: transparent;
+	color: #000;
+}
+.promo-oppo-sidebar-ad .promo-oppo-sidebar-ad-text {
+	display: inline-block;
+}
+.promo-oppo-sidebar-ad .promo-oppo-sidebar-ad-url {
+	display: none;
+}
+.promo-oppo-sidebar-ad:hover .promo-oppo-sidebar-ad-url {
+	display: inline-block;
+}
+.promo-oppo-sidebar-ad:hover .promo-oppo-sidebar-ad-text {
+	display: none;
+}
+.promo-oppo-sidebar {
+	border-radius: 8px;
+	padding: 30px 16px 16px 16px;
+}
+.promo-oppo-sidebar-title {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.promo-oppo-sidebar-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 10px;
+}
+.promo-oppo-sidebar-vertical .promo-oppo-sidebar-wrapper {
+	flex-direction: column;
+}
+.promo-oppo-sidebar-image {
+	flex-grow: 1;
+	flex-basis: 0;
+	min-width: 0;
+}
+.promo-oppo-sidebar-image img {
+	width: 100%;
+}
+.promo-oppo-sidebar-characteristics {
+	flex-grow: 1;
+	flex-basis: 0;
+	min-width: 0;
+}
+.promo-oppo-sidebar-characteristics-item + .promo-oppo-sidebar-characteristics-item {
+	margin-top: 20px;
+}
+.promo-oppo-sidebar-vertical .promo-oppo-sidebar-characteristics-item {
+	display: flex;
+}
+.promo-oppo-sidebar-vertical .promo-oppo-sidebar-characteristics-item + .promo-oppo-sidebar-characteristics-item {
+	display: flex;
+	margin-top: 10px;
+}
+.promo-oppo-sidebar-vertical .promo-oppo-sidebar-characteristics-item strong {
+	flex-basis: 100px;
+}
+.promo-oppo-sidebar-characteristics-item strong {
+	color: #046A38;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.promo-oppo-sidebar-characteristics-item div {
+	font-size: 16px;
+}
+.promo-oppo-sidebar-button {
+	display: block;
+	background-color: black;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 8px;
+	text-decoration: none;
+}

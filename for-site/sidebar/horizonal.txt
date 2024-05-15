@@ -1,0 +1,35 @@
+<div class="promo-oppo-sidebar-ad">
+    <span class="promo-oppo-sidebar-ad-text">Реклама</span>
+    <span class="promo-oppo-sidebar-ad-url">OROPE Germany GmbH</span>
+</div>
+<div class="promo-oppo-sidebar promo-oppo-sidebar-vertical" style="background-color: #2CFF73">
+    <div class="promo-oppo-sidebar-title">OPPO Find N3 Flip</div>
+    <div class="promo-oppo-sidebar-wrapper">
+        <div class="promo-oppo-sidebar-image">
+            <img src="images/sidebar-horizontal-1.jpg" alt="">
+        </div>
+        <div class="promo-oppo-sidebar-characteristics">
+            <div class="promo-oppo-sidebar-characteristics-item">
+                <strong>Экран</strong>
+                <div>6,8"  + 3,26"</div>
+            </div>
+            <div class="promo-oppo-sidebar-characteristics-item">
+                <strong>Процессор</strong>
+                <div>MediaTek Dimensity</div>
+            </div>
+            <div class="promo-oppo-sidebar-characteristics-item">
+                <strong>Камера</strong>
+                <div>50 Мп + 32 Мп</div>
+            </div>
+            <div class="promo-oppo-sidebar-characteristics-item">
+                <strong>Память</strong>
+                <div>12 ГБ + 256 ГБ</div>
+            </div>
+            <div class="promo-oppo-sidebar-characteristics-item">
+                <strong>Батарея</strong>
+                <div>4300 мАч</div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="promo-oppo-sidebar-button">Подробнее</a>
+</div>
